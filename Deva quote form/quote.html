@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Request a Quote</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+  </nav>
+  <form id="quote-form">
+		<h1 style="text-align:center";>Request a Quote</h1>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone" required>
+    <label type="country">country:</label>
+    <input type="country" id="country" name="country" required>
+		<label for="project-description">Project Description:</label>
+		<textarea id="project-description" name="project-description" required></textarea>
+		<label for="deadline">Deadline:</label>
+		<input type="date" id="deadline" name="deadline" required>
+    <label for="file">Upload File:</label>
+    <input type="file" id="file" name="file">
+    <label for="Message">Message:</label>
+    <input type="Message" id="Message" name="Message">
+		<button type="submit">Submit</button>
+	</form>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
+<style>
+  /* Global Styles */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background-color: #f4f4f4;
+}
+
+/* Navigation Menu */
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 50px;
+  font-size: 22px;
+  text-align: center;
+  background-color: #4a3365;
+  border-bottom: 4px solid#1b1b1b;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	color: #337ab7;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #23527c;
+}
+
+/* Page Content */
+
+.page-content {
+	max-width: 800px;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Home Page */
+.home-page {
+	background-image: url('home-background.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+/* Services Page */
+
+.services-page {
+	background-color: #f7f7f7;
+}
+
+.services-page h2 {
+	margin-top: 0;
+}
+
+.services-page ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.services-page li {
+	margin-bottom: 20px;
+}
+
+/* Support Page */
+
+.support-page {
+	background-color: #e9e9e9;
+}
+
+.support-page h2 {
+	margin-top: 0;
+}
+
+.support-page p {
+	margin-bottom: 20px;
+}
+.home-page {
+	background-image: url('home-background.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+/* Services Page */
+
+.services-page {
+	background-color: #f7f7f7;
+}
+
+.services-page h2 {
+	margin-top: 0;
+}
+
+.services-page ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.services-page li {
+	margin-bottom: 20px;
+}
+
+/* Support Page */
+
+.support-page {
+	background-color: #e9e9e9;
+}
+
+.support-page h2 {
+	margin-top: 0;
+}
+
+.support-page p {
+	margin-bottom: 20px;
+}.home-page {
+	background-image: url('home-background.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+/* Services Page */
+
+.services-page {
+	background-color: #f7f7f7;
+}
+
+.services-page h2 {
+	margin-top: 0;
+}
+
+.services-page ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.services-page li {
+	margin-bottom: 20px;
+}
+
+/* Support Page */
+
+.support-page {
+	background-color: #e9e9e9;
+}
+
+.support-page h2 {
+	margin-top: 0;
+}
+
+.support-page p {
+	margin-bottom: 20px;
+}
+/* Help Page */
+
+.help-page {
+	background-color: #d3d3d3;
+}
+
+.help-page h2 {
+	margin-top: 0;
+}
+
+.help-page p {
+	margin-bottom: 20px;
+}
+
+#quote-form {
+	max-width: 600px;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #7d2a90;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#quote-form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#quote-form input, #quote-form textarea {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+#quote-form button[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#quote-form button[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+
